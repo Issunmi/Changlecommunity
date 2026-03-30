@@ -1,0 +1,11 @@
+/* 让文章正文恢复左对齐，同时保持页面整体宽度不变 */
+article {
+    text-align: left;
+}
+
+/* 如果不想影响文章内部的特定居中元素（例如表格或引文），
+   可以只覆盖 .tc-l 和 .center 类 */
+.tc-l,
+.center {
+    text-align: left;
+}
