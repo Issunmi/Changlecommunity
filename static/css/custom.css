@@ -9,3 +9,15 @@ article {
 .center {
     text-align: left;
 }
+
+/* 蓝色高亮文本 */
+.text-highlight-blue {
+  background-color: rgba(173, 216, 230, 0.7);  /* 使用更明显的浅蓝色背景 */
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-weight: 700;  /* 加粗文字，更突出 */
+  color: #00449e !important;    /* 使用深蓝色文字，确保高对比度 */
+  box-shadow: 0 2px 4px rgba(0, 68, 158, 0.2); /* 添加阴影，使高亮更立体 */
+  border: 1px solid rgba(0, 68, 158, 0.3); /* 添加边框，使高亮区域更清晰 */
+  margin: 0 2px; /* 添加一点外边距，防止文字紧贴边界 */
+}

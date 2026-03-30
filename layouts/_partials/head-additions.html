@@ -1,0 +1,25 @@
+{{/* 
+ 根据站点配置参数添加自定义样式表
+ 检查是否启用了customCSS参数，如果启用则获取并处理custom.css文件
+ 处理包括压缩(minify)和生成指纹(哈希值用于缓存控制)
+*/}}
+{{ if $.Site.Params.customCSS }}
+  {{ $style := resources.Get "css/custom.css" }}
+  {{ if $style }}
+    {{ $style := $style | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+  {{ end }}
+{{ end }}
+
+{{/*
+ 根据站点配置参数添加图片修复样式表
+ 检查是否启用了imageFixes参数，如果启用则获取并处理image-fixes.css文件
+ 处理包括压缩(minify)和生成指纹(哈希值用于缓存控制)
+*/}}
+{{ if $.Site.Params.imageFixes }}
+  {{ $imageFixStyle := resources.Get "css/image-fixes.css" }}
+  {{ if $imageFixStyle }}
+    {{ $imageFixStyle := $imageFixStyle | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $imageFixStyle.RelPermalink }}" integrity="{{ $imageFixStyle.Data.Integrity }}">
+  {{ end }}
+{{ end }}

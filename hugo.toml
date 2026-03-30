@@ -3,6 +3,12 @@ languageCode = "zh-cn"
 title = "常乐延寿局"
 theme = "ananke"
 
+# 启用HTML标签渲染
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 # 默认语言
 defaultContentLanguage = "zh"
 
@@ -17,26 +23,29 @@ defaultContentLanguage = "zh"
     url = "/services/"
     weight = 2
   [[menu.main]]
-    name = "关于我们"
-    url = "/about/"
+    name = "隐私协议"
+    url = "/privacy/"
     weight = 3
   [[menu.main]]
-    name = "联系我们"
-    url = "/contact/"
+    name = "寿命延长协议"
+    url = "/Lifespan_extension_agreement/"
     weight = 4
 
 # 主题参数（可根据实际修改）
 [params]
   description = "*让岁月更长，让安心常在。*"
-  author = "常乐延寿局表世界"
+  author = "常乐延寿局"
   logo = "images/logo.png"          # 将 logo 图片放入 static/images/
   favicon = "images/favicon.png"    # 网站图标
   # 联系方式
   contact_info = "西京市常乐区常乐路88号 | 电话：400-9178-2333 "
   # 底部版权信息
   copyright = "© 2035 常乐延寿局. All rights reserved."
+  
+  # 启用自定义CSS - 使用正确的Ananke主题参数格式
+  custom_css = ["css/custom.css", "css/image-fixes.css"]
 
 [[params.services]]
-  name = "常乐延寿局里世界"
+  name = "常乐延寿局2"
   icon = "images/logo2.png"
   description = "让意识更薄，让恐惧归零。"

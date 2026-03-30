@@ -1,0 +1,41 @@
+/* 针对图片对齐问题的修复 - 默认左对齐 */
+.figure, figure, img {
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+}
+
+/* 确保图片容器左对齐 */
+.figure, figure {
+  text-align: left;
+}
+
+/* 针对不同对齐需求的专用类 */
+.image-centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.image-left {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
+/* 确保内容区域内的图片默认左对齐 */
+.article img,
+.content img {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: left !important;
+}
