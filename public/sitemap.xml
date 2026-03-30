@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://issunmi.github.io/Changlecommunity/</loc>
+    <loc>http://localhost:1313/Changlecommunity/</loc>
     <lastmod>2026-03-30T19:47:21+08:00</lastmod>
   </url><url>
-    <loc>https://issunmi.github.io/Changlecommunity/categories/</loc>
+    <loc>http://localhost:1313/Changlecommunity/categories/</loc>
   </url><url>
-    <loc>https://issunmi.github.io/Changlecommunity/tags/</loc>
+    <loc>http://localhost:1313/Changlecommunity/tags/</loc>
   </url>
 </urlset>
